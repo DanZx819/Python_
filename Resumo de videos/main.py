@@ -1,7 +1,7 @@
 import fun
 import os
 from pathlib import Path
- 
+
 
 os.chdir("C:\\Users\\Daniel\\Desktop\\Estudos\\Python_\\Resumo de videos")
 
