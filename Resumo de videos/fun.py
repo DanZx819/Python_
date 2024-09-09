@@ -3,9 +3,9 @@ from pytubefix import YouTube
 import os
 from pathlib import Path
 from moviepy.editor import *
-import openai
 
-def Baixar():
+
+def BaixarVideo():
     link = input("Digite o link do video que voce deseja baixar: ")
 
     yt = YouTube(link)
