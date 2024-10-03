@@ -39,7 +39,7 @@ def main(page: ft.Page):
     item2 = [c1, c2, c3]
     #Criando Row
 
-    row = ft.Row(spacing=10, controls= item)
+    row = ft.Row(spacing=10, controls= item2)
 
     #Criando Coluna
 
@@ -52,10 +52,14 @@ def main(page: ft.Page):
     lv.controls.append(ft.Text("Ola mundo"))
     lv.controls.append(colum)
 
-    #Adicionando container
 
-    page.add(lv, row, colum)
+    
+    #Criando Grid View
+    gv = ft.GridView(
+        expand = 1, runs_count = 5, max_extent = 150, child_aspect_ratio = 1.0, spacing= 10, run_spacing=5,
+        )
+    gv.controls.append(colum)
+    
 
-    #Criando List View
-
+    page.add(lv, gv)
 ft.app(target=main)
