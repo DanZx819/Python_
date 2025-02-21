@@ -74,6 +74,7 @@ def dollar(a=0):
             break
         else:
             print("Ok |", end="")
+            break
 
 def euro(a=0):
     time.sleep(0.5)
@@ -85,5 +86,6 @@ def euro(a=0):
             break
         else:
             print("Ok |", end="")
+            break
     
     
